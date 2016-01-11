@@ -1,4 +1,5 @@
-# FLOWLite - PHP objektorientiertes Framework mit MVC Design Pattern
+# FLOWLite 
+Objektorientiertes PHP Framework mit MVC Design Pattern
 
 ## How-to
 1) Entpacken Sie das Download ZIP-File
