@@ -1,0 +1,10 @@
+		 
+	#	Benchmark::start('Dev');
+	#	Benchmark::stop('Dev');
+
+#BaseHelperMessage::showMessage(Benchmark::getBenchmarkTime('Dev'),array(BaseHelperEscapeChars::getEscapeChar('BR')));
+#BaseHelperMessage::showMessage(Benchmark::getBenchmarkMemory('Dev'),array(BaseHelperEscapeChars::getEscapeChar('BR')));
+#echo "<br>";	        
+#echo Benchmark::getBenchmarkTime('Dev');		        
+#echo "<br>";
+#echo Benchmark::getBenchmarkMemory('Dev');		        

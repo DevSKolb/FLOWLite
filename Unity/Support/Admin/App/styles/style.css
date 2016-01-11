@@ -1,0 +1,229 @@
+#zentriert {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  width: 700px;
+  min-height: 750px;
+  margin-top: 5px;
+  margin-left: -365px;
+  padding:10px;
+  overflow:hidden;
+
+}
+#content {
+  margin-top: 10px;
+  border:1px solid #C3DDF0;
+   background-color:#DAEBF7;
+  height: auto;
+  padding:20px;
+
+}
+
+#content, #stylizederror {
+  
+ border-radius: 5px;
+-khtml-border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px; 
+
+}
+#content {
+
+    -khtml-box-shadow: 2px 2px 5px #ccc;
+    -webkit-box-shadow: 2px 2px 5px #ccc;
+    -moz-box-shadow: 2px 2px 5px #ccc;
+    box-shadow: 2px 2px 5px #ccc;  
+}
+#stylized {
+  
+ border-radius: 5px;
+-khtml-border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px; 
+  
+}
+
+
+h1{ FONT-FAMILY: Georgia,"Helvetica Neue", Helvetica, Arial, sans-serif; 
+	FONT-SIZE: 280%; FONT-WEIGHT: normal;
+		color: #1a74b0;
+}
+#h2 { FONT-FAMILY: Georgia,"Helvetica Neue", Helvetica, Arial, sans-serif; 
+	FONT-SIZE: 230%; FONT-WEIGHT: normal;
+	color: #000;
+
+}
+#h3 { 
+FONT-FAMILY: Georgia,"Helvetica Neue", Helvetica, Arial, sans-serif; 
+	FONT-SIZE: 100%; FONT-WEIGHT: normal;
+	color: #000;
+	
+}
+
+p { FONT-FAMILY: Georgia,"Helvetica Neue", Helvetica, Arial, sans-serif; 
+	FONT-SIZE: 150%; FONT-WEIGHT: normal;
+	color: #000;
+}
+
+body{
+font-family:”Lucida Grande”, “Lucida Sans Unicode”, Verdana, Arial, Helvetica, sans-serif;
+font-size:12px;
+background: #DAEBF7 url(../img/fl_bg.gif) left top repeat-x;
+}
+
+p, h1, form, button{border:0; margin:0; padding:0;}
+.spacer{clear:both; height:1px;}
+/* ———– My Form ———– */
+.myform{
+margin:0 auto;
+width:600px;
+padding:14px;
+}
+.myformerror{
+margin:0 auto;
+width:600px;
+padding:14px;
+}
+/* ———– stylized ———– */
+#stylized{
+border:solid 2px #b7ddf2;
+background:#ebf4fb;
+}
+#stylizederror{
+  clear:left;
+margin-left:12px;
+border:solid 2px #F2B7BA;
+background:#FBEBEB;
+display:none;
+}
+#stylized h1 {
+font-size:14px;
+font-weight:bold;
+margin-bottom:8px;
+}
+#stylized p{
+font-size:11px;
+color:#666666;
+margin-bottom:10px;
+border-bottom:solid 1px #b7ddf2;
+padding-bottom:10px;
+}
+#stylized label{
+  clear:both;
+display:block;
+font-weight:bold;
+text-align:right;
+width:200px;
+float:left;
+}
+#stylized .small{
+
+color:#666666;
+display:block;
+font-size:11px;
+font-weight:normal;
+text-align:right;
+width:200px;
+}
+#stylized input{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:300px;
+margin:2px 0 15px 10px;
+}
+#stylized select{
+float:left;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aacfe4;
+width:305px;
+margin:2px 0 15px 10px;
+}
+#stylized button:hover {
+	background-color: #CC0000; 
+	cursor: pointer;
+}
+
+#stylized button{
+clear:both;
+margin-left:210px;
+width:125px;
+height:31px;
+background:#666666 url(../img/button.png) no-repeat;
+text-align:center;
+line-height:31px;
+color:#FFFFFF;
+font-size:11px;
+font-weight:bold;
+font-family:”Lucida Grande”, “Lucida Sans Unicode”, Verdana, Arial, Helvetica, sans-serif;
+cursor: pointer;
+
+
+}
+#stylized{
+ clear:left;
+ margin-top:5px;
+}
+#dbtitle{
+ float:left;
+ width: 550px;
+ height:75px;
+ margin-left:15px;
+ border:0px solid #eee;
+}
+#database{
+ float:right;
+ width: 70px;
+margin-top:5px;
+border:0px  solid #eee;
+}
+
+#vonoben{
+margin-top:10px;
+width:500px;
+height:10px;
+}
+#copy{
+margin-top:10px;
+
+height:10px;
+
+font-size:11px;
+font-weight:normal;
+ color: #777;	
+
+}
+#copy1, #copy1 a{
+
+margin-top:5px;
+width:700px;
+height:10px;
+
+font-size:11px;
+font-weight:normal;
+text-align: justify;
+color: #c3c3c3;	
+text-decoration:none;
+}
+#copy1 a:hover{
+	text-decoration:underline;
+}
+#scantitle {
+  
+font-size:11px;
+font-weight:normal;
+color: #6699CC;	
+margin-left:15px;  
+margin-top:20px;
+margin-bottom:5px;
+border:0px solid #000;
+height:16px;
+}
+#separator {
+  clear: left;
+  margin-top:-5px;
+  margin-bottom: 10px;
+  margin-left: 130px;
+  }

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+{baseURL}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>{APPS-TITLE}</title>
+
+<link rel="stylesheet" type="text/css" href="styles/style.css">
+
+<script>
+function snd(){
+		var el = document.getElementById('stylizederror');  
+		el.style.display = 'block';
+}
+
+function check(){
+
+	document.myForm.apps_action.value = 'submit';
+	document.myForm.submit();
+
+}
+</script>
+</head>
+
+<body>
+
+<div id="zentriert">
+<div id="h2"><a class="logo" href="http://www.flowlite.de/"><img alt="FlOWLite Logo" src="img/logo_fl.png" title="FLOWLite Framework" width="350" height="69" border="0"></a></div>
+<div id="content" >
+
+<div id="dbtitle">
+  <h1>ORM Scan</h1>
+  <p>Scaffolding for object-relational mapping</p>
+</div>
+<div id="database">
+  <img src="img/glas.png">
+</div>
+
+<div id="stylizederror" class="myformerror" style="display:{ERROR-SHOW}">{ERROR-MESSAGE}
+</div>
+
+<div id="stylized" class="myform">
+<form id="myForm" name="myForm" method="post" action="/FLOWLite_1.0/Unity/Support/Admin/ORM/submit/start.html" onSubmit="check();">
+
+<div id="vonoben"></div>
+<label>Host 
+<span class="small">Add your hostname (*)</span>
+</label>
+<input type="text" name="host" id="host" value="{INPUT-HOST}" />
+
+<label>Database
+<span class="small">Add the name of database (*)</span>
+</label>
+<input type="text" name="dbname" id="dbname" value="{INPUT-DB}" />
+
+<label>DB User
+<span class="small">Add the user of database (*)</span>
+</label>
+<input type="text" name="dbuser" id="dbuser" value="{INPUT-USER}" />
+
+<label>DB Pass
+<span class="small">Add the password of database</span>
+</label>
+<input type="password" name="dbpass" id="dbpass" maxlength="8" value="{INPUT-PASS}" />
+
+<div id="separator"><img src="img/line.png"></div>
+
+<label>Prefix
+<span class="small">Add a Apps-Prefix of tables</span>
+</label>
+<input type="text" name="prefix" id="prefix" value="{INPUT-PREFIX}" />
+
+<label>ORM Subfolder
+<span class="small">Add the Subfolder under ORM</span>
+</label>
+<input type="text" name="sfolder" id="sfolder" value="{INPUT-SFOLDER}"/>
+
+<button type="submit">Start ORM-Scan</button>
+<div class="spacer"></div>
+
+</form>
+</div>
+
+</div><div id="copy">&copy;&nbsp;2011 FLOWLite.de</div><div id="copy1">Cristal Icons by <a href="http://www.everaldo.com/">Everaldo Coelho</a>. This script belongs to the FLOWLite framework. It is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your  option) any later version. This script is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHAN-TABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details. You should have received a copy of the GNU Lesser General Public License along with the script. If not, see http://www.gnu.org/licenses/lgpl.html</div>
+</div>
+</body>
+</html>

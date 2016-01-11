@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+; *                                                                        *
+; * This script belongs to the FLOWLite framework.                         *
+; *                                                                        *
+; * It is free software; you can redistribute it and/or modify it under    *
+; * the terms of the GNU Lesser General Public License as published by the *
+; * Free Software Foundation, either version 3 of the License, or (at your *
+; * option) any later version.                                             *
+; *                                                                        *
+; * This script is distributed in the hope that it will be useful, but     *
+; * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHAN-    *
+; * TABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser       *
+; * General Public License for more details.                               *
+; *                                                                        *
+; * You should have received a copy of the GNU Lesser General Public       *
+; * License along with the script.                                         *
+; * If not, see http://www.gnu.org/licenses/lgpl.html                      *
+; *                                                                        */ 
+-->
+<configuration id="framework">
+
+	<!-- LOCALE -->
+	<locale id="locale">
+		<timezone>Europe/Paris</timezone>
+		<language>de</language>
+	</locale>
+
+	<!-- LOGGER -->
+	<logger id="logger">
+		<file>FLOWLite_1.0\Unity\Framework\Logs\error.log</file>
+		<output>DISPLAY</output>
+		<mail>false</mail>
+		<mailto></mailto>
+		<webmaster></webmaster>		
+	</logger>
+
+	<!-- SESSION -->
+	<session id="Session">
+		<use>false</use>
+		<log>false</log>
+		<user>false</user>
+		<handler>false</handler>
+		<sidform>false</sidform>		
+		<table>session</table>		
+		<logfile>FLOWLite_1.0\Unity\Framework\Logs\session.log</logfile>
+	</session>
+
+	<!-- SESSION NEW ID -->
+	<sessionSID id="Session SID">
+		<new>true</new>
+		<time>60</time>		
+		<unit>m</unit>		
+	</sessionSID>
+
+	<!-- APPLICATION -->
+	<standard id="Standard Apps">
+		<controller>StandardController</controller>		
+		<action>index</action>		
+		<unity>Sample</unity>		
+		<screen>1000</screen>		
+	</standard>
+
+	<!-- ROUTER -->
+	<router id="Router">
+		<routing>URL_REWRITE</routing>
+		<usd>false</usd>
+		<unity>false</unity>
+		<htaccess>false</htaccess>		
+		<ajax>false</ajax>		
+	</router>	
+
+	<!-- HIDDEN FIELDS -->
+	<hiddenFields id="hiddenFields">
+		<controller>apps_controller</controller>
+		<unity>apps_unity</unity>
+		<screen>apps_screen</screen>
+		<action>apps_action</action>
+	</hiddenFields>
+	
+	<!-- CACHE -->
+	<cache id="Cache">
+		<use>true</use>
+		<sha1>true</sha1>
+		<lifetime>1800</lifetime>		
+		<path>../../../cache/</path>		
+		<ext>.cache</ext>		
+	</cache>
+
+	<!-- SECURITY -->
+	<security id="Security">
+		<data>GET,POST</data>
+		<file>FLOWLite_1.0/Unity/Framework/FL/Configuration/default_filter.xml</file>
+		<exit>0</exit>		
+		<callback>0</callback>		
+	</security>
+	
+	<!-- DATABASE -->
+	<database id="Database">
+		<access>MYSQL</access>
+		<host>localhost</host>
+		<dbname></dbname>		
+		<dbuser></dbuser>		
+		<dbpass></dbpass>		
+		<autoconnect>false</autoconnect>		
+	</database>
+
+	<!-- ORM -->
+	<orm id="ORM">
+		<use>true</use>
+	</orm>
+
+	<!-- TRACE -->
+	<trace id="Trace">
+		<file>../../../Logs/trace.log</file>
+	</trace>
+
+	<!-- repository -->
+	<repository id="rep">
+		<js>js/</js>
+		<css>styles/</css>
+	</repository>
+
+	<!-- TEMPLATE -->
+	<tpl id="TPL">
+		<utf8>true</utf8>
+	</tpl>
+
+</configuration>

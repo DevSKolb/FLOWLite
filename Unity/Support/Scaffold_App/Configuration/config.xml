@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+; *                                                                        *
+; * This script belongs to the FLOWLite framework.                         *
+; *                                                                        *
+; * It is free software; you can redistribute it and/or modify it under    *
+; * the terms of the GNU Lesser General Public License as published by the *
+; * Free Software Foundation, either version 3 of the License, or (at your *
+; * option) any later version.                                             *
+; *                                                                        *
+; * This script is distributed in the hope that it will be useful, but     *
+; * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHAN-    *
+; * TABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser       *
+; * General Public License for more details.                               *
+; *                                                                        *
+; * You should have received a copy of the GNU Lesser General Public       *
+; * License along with the script.                                         *
+; * If not, see http://www.gnu.org/licenses/lgpl.html                      *
+; *                                                                        */ 
+-->
+<configuration id="application">
+
+	<!-- APPLICATION -->
+	<standard id="Standard Apps">
+		<controller>standardController</controller>
+		<action>index</action>		
+	</standard>
+
+	<!-- ROUTER -->
+	<router id="Router">
+		<routing>URL_REWRITE</routing>
+		<htaccess>true</htaccess>			
+	</router>	
+
+	<!-- CACHE -->
+	<cache id="Cache">
+		<use>true</use>
+	</cache>
+
+	<!-- DATABASE -->
+	<database id="Database">
+		<access>MYSQL</access>
+		<host>localhost</host>
+		<dbname></dbname>		
+		<dbuser></dbuser>		
+		<dbpass></dbpass>		
+	</database>
+
+	<!-- ORM -->
+	<orm id="ORM">
+		<use>true</use>
+	</orm>
+
+</configuration>
